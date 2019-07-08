@@ -1,4 +1,7 @@
-
+"""
+Class MaxSizeList creates a list with a capped size. For every push that takes the instance over its limit,
+the first element gets popped.
+"""
 
 class MaxSizeList(object):
     def __init__(self,MaxSize):
@@ -13,7 +16,8 @@ class MaxSizeList(object):
     def get_list(self):
         return self.MyList
 
-
+"""
+#Testing code 
 a = MaxSizeList(3)
 b = MaxSizeList(1)
 
@@ -29,3 +33,4 @@ b.push("go")
 
 print(a.get_list())
 print(b.get_list())
+"""
