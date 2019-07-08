@@ -1,3 +1,7 @@
+"""
+This builds upon my solution for assignment 3, adding error identification and handling.
+"""
+
 class ConfigDict(dict):
     def __init__(self,filename):
         self._filename = filename
@@ -29,8 +33,12 @@ class ConfigKeyError(Exception):
     def __str__(self):
         return 'key "{}" not found. Available keys: {}'.format(self.key,self.key_tuple)
 
+"""
+#Testing Code
+
 mydict = ConfigDict('testing.txt')
 mydict['a'] = 'b'
 mydict['c'] = 'd'
 mydict['e'] = 'f'
 mydict['x']
+"""
