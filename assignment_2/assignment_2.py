@@ -1,3 +1,8 @@
+"""
+This is a practice with inheritance. Both LogFile and DelimFile inherit from WriteFile, but have distinct
+methods when writing to a file.
+"""
+
 import abc
 import datetime
 
