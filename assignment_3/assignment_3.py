@@ -1,3 +1,7 @@
+"""
+This is practice with both inheritance and polymorphism. ConfigDict inherits from the python built-in
+dict class to allow users to build config files with the ease of using dictionaries.
+"""
 
 class ConfigDict(dict):
     def __init__(self,filename):
@@ -13,8 +17,12 @@ class ConfigDict(dict):
         with open(self._filename,'a') as fp:
             fp.write('\n{}={}'.format(str(key),str(value)))
 
+"""
+#Testing Code
 
-cc = ConfigDict('config_dict.txt')
+cc = ConfigDict('config_dict.txt')         # Assumes 'config_dict.txt' already exists
 print(cc['sql_query'])                     # SELECT this FROM that WHERE condition
-print(cc['email_to'])                  # me@mydomain.com
-cc['database'] = 'mysql_managed'       # [ this writes to the config file ]
+print(cc['email_to'])                      # me@mydomain.com
+cc['database'] = 'mysql_managed'           # [ this writes to the config file ]
+
+"""
