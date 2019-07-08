@@ -36,6 +36,10 @@ class DelimFile(WriteFile):
         line = self.delimiter.join(input)
         self.writeLine(line)
 
+        
+"""
+#Testing Code
+
 log = LogFile('log.txt')                  # passes the filename to write to
 mydelim = DelimFile('data.csv', ',')      # passes the filename to write to
                                           # and a delimeter
@@ -46,3 +50,4 @@ log.write('this is another log message')  # same
 mydelim.write(['a', 'b', 'c', 'd'])       # writes a list of values separated
                                           # by comma to the file
 mydelim.write(['1', '2', '3', '4'])       # same
+"""
