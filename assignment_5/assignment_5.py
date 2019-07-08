@@ -1,3 +1,7 @@
+"""
+This adjusts the object serialization of the prior solution, now using pickle files as opposed to text
+files. User functionality remains unchanged.
+"""
 class ConfigDict(dict):
 
     config_directory = '/home/petejourgensen/Desktop/OOP/Assignments/'
