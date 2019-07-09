@@ -1,3 +1,9 @@
+"""
+This builds upon the solution for assignment 4 with the addition of a collection of unit 
+tests. They can be run to ensure each piece of the ConfigDict class is performing as 
+intended.
+"""
+
 import os
 import pytest
 import shutil
